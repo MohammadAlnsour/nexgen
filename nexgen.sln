@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nexgen.API.Tests", "src\nex
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "nexgen.Web", "src\nexgen.Web\nexgen.Web.esproj", "{A79713AC-D6D8-4949-9B17-F70A72C6410A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nexgen.AuthService", "src\nexgen.AuthService\nexgen.AuthService.csproj", "{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{A79713AC-D6D8-4949-9B17-F70A72C6410A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A79713AC-D6D8-4949-9B17-F70A72C6410A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A79713AC-D6D8-4949-9B17-F70A72C6410A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{31C69109-19FF-4317-901B-B26B95034464} = {5F81B60F-B73E-47E5-90E7-9F03D29409D3}
 		{9F3415E0-29D2-465A-981B-62DCA7D5576C} = {52DBE282-B708-4165-92EB-19FC492105DD}
 		{A79713AC-D6D8-4949-9B17-F70A72C6410A} = {1BC584B0-DB66-4ACE-A52D-732DA82305D7}
+		{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD} = {F29F6457-E937-4397-914E-2480B9B5DAB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {833EA171-BF04-4381-A348-577F82CFBD6A}
