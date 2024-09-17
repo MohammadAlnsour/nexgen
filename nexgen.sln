@@ -37,7 +37,7 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "nexgen.Web", "src\nexgen.We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nexgen.AuthService", "src\nexgen.AuthService\nexgen.AuthService.csproj", "{6FFA0E4E-A088-4F1C-9D76-B888A540ECAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nexgen.Web.RazorPages", "src\nexgen.Web.RazorPages\nexgen.Web.RazorPages.csproj", "{DD4FC0FF-83E5-456C-B498-6A9496D35C86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nexgen.Web.RazorPages", "src\nexgen.Web.RazorPages\nexgen.Web.RazorPages.csproj", "{DD4FC0FF-83E5-456C-B498-6A9496D35C86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
