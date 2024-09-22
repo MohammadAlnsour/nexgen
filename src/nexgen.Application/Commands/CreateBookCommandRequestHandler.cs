@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using nexgen.Application.Requests;
 using nexgen.Domain.Entities;
-using nexgen.Domain.Factories;
-using nexgen.Infrastructure.Repositories;
 using MediatR;
 using Serilog;
 using StackExchange.Redis;
 using nexgen.Shared.AppExceptions;
+using nexgen.Domain.Factories.Interfaces;
+using nexgen.Infrastructure.Repositories.Interfaces;
 
 namespace nexgen.Application.Commands
 {

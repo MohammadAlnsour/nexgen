@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using nexgen.Domain.Entities;
+using nexgen.Domain.Factories.Interfaces;
 
 namespace nexgen.Domain.Factories
 {

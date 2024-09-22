@@ -2,13 +2,13 @@
 using nexgen.Application.Contracts.DTOs;
 using nexgen.Application.Requests;
 using nexgen.Domain.Entities;
-using nexgen.Domain.Factories;
-using nexgen.Infrastructure.Repositories;
 using nexgen.Shared.AppExceptions;
 using MediatR;
 using Newtonsoft.Json;
 using Serilog;
 using StackExchange.Redis;
+using nexgen.Domain.Factories.Interfaces;
+using nexgen.Infrastructure.Repositories.Interfaces;
 
 namespace nexgen.Application.Queries
 {

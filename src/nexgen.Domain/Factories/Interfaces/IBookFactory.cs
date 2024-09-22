@@ -1,6 +1,6 @@
 ﻿using nexgen.Domain.Entities;
 
-namespace nexgen.Domain.Factories
+namespace nexgen.Domain.Factories.Interfaces
 {
     public interface IBookFactory
     {

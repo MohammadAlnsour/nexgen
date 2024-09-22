@@ -9,6 +9,7 @@ using nexgen.Infrastructure;
 using nexgen.API.Middlewares;
 using Serilog;
 using nexgen.Shared.Config;
+using nexgen.Domain.Factories.Interfaces;
 
 namespace nexgen.API
 {

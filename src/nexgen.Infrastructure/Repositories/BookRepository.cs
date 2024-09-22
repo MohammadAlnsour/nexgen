@@ -1,5 +1,6 @@
 ﻿using nexgen.Domain.Entities;
 using nexgen.Infrastructure.Dapper;
+using nexgen.Infrastructure.Repositories.Interfaces;
 
 namespace nexgen.Infrastructure.Repositories
 {
