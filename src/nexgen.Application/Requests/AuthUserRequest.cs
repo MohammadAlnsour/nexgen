@@ -7,5 +7,6 @@ namespace nexgen.Application.Requests
     {
         public string? Username { get; set; }
         public string? PasswordHash { get; set; }
+        public string? AuthToken { get; set; }
     }
 }

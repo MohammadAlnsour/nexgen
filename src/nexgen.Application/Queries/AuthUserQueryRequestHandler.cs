@@ -8,6 +8,7 @@ using nexgen.Domain.Entities;
 using nexgen.Domain.Factories.Interfaces;
 using nexgen.Infrastructure.Repositories.Interfaces;
 using nexgen.Shared.AppExceptions;
+using nexgen.Shared.JwtHelper;
 using Serilog;
 using System.Text;
 
@@ -19,6 +20,7 @@ namespace nexgen.Application.Queries
         private readonly IMapper mapper;
         private readonly IUserRepository userRepository;
         private readonly IValidator<AuthUserRequest> authUserValidator;
+        private readonly JwtTokensUtility jwtTokensUtility;
         private readonly ILogger logger;
 
         public AuthUserQueryRequestHandler(
@@ -26,12 +28,14 @@ namespace nexgen.Application.Queries
             IMapper mapper,
             IUserRepository userRepository,
             IValidator<AuthUserRequest> authUserValidator,
+            JwtTokensUtility jwtTokensUtility,
             ILogger logger)
         {
             this.bookFactory = bookFactory;
             this.mapper = mapper;
             this.userRepository = userRepository;
             this.authUserValidator = authUserValidator;
+            this.jwtTokensUtility = jwtTokensUtility;
             this.logger = logger;
         }
         public async Task<AuthUserResponseDTO> Handle(AuthUserRequest request, CancellationToken cancellationToken)
@@ -43,8 +47,16 @@ namespace nexgen.Application.Queries
             try
             {
                 var user = await userRepository.GetUserByUsernameAndPassword(request.Username, request.PasswordHash);
-                var response = mapper.Map<User, AuthUserResponseDTO>(user);
-                return response;
+                if (user == null) return new AuthUserResponseDTO() { IsAuthorized = true, Message = "", Token = "" };
+                //var response = mapper.Map<User, AuthUserResponseDTO>(user);
+
+                var message = "Auth succeed";
+                var token = jwtTokensUtility.GenerateToken(request.Username);
+                
+                var responseDto = new AuthUserResponseDTO() {  IsAuthorized = true, Message = message, Token = token }; 
+
+
+                return responseDto;
             }
             catch (Exception ex)
             {
