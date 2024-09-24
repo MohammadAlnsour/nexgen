@@ -1,0 +1,79 @@
+﻿@page
+@model nexgen.Web.RazorPages.Pages.Shared._TopMenuPartialModel
+@{
+}
+
+<div class="main_menu header_position">
+    <nav>
+        <ul>
+            <li>
+                <a asp-page="/Index">home</a>                
+            </li>
+            <li class="mega_items">
+                <a asp-page="/Courses">Courses<i class="fa fa-angle-down"></i></a>
+                <div class="mega_menu">
+                    <ul class="mega_menu_inner">
+                        <li>
+                            <a asp-page="/Courses">Latest Courses</a>
+                            <ul>
+                                <li><a asp-page="/Courses/">Course 1</a></li>
+                                <li><a asp-page="/Courses/">Course 2</a></li>
+                                <li><a asp-page="/Courses/">Course 3 </a></li>
+                                <li><a asp-page="/Courses/">Course 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-page="/Courses/">Hot Courses</a>
+                            <ul>
+                                <li><a asp-page="/Courses/">Course 1</a></li>
+                                <li><a asp-page="/Courses/">Course 2</a></li>
+                                <li><a asp-page="/Courses/">Course 3</a></li>
+                                <li><a asp-page="/Courses/">Course 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-page="/Courses/">Medicine Courses</a>
+                            <ul>
+                                <li><a asp-page="/Courses/">Course 1</a></li>
+                                <li><a asp-page="/Courses/">Course 2</a></li>
+                                <li><a asp-page="/Courses/">Course 3</a></li>
+                                <li><a asp-page="/Courses/">Course 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-page="/Courses/">Discounted Courses</a>
+                            <ul>
+                                <li><a asp-page="/Courses/">Course 1</a></li>
+                                <li><a asp-page="/Courses/">Course 2</a></li>
+                                <li><a asp-page="/Courses/">Course 3</a></li>
+                                <li><a asp-page="/Courses/">Course 4</a></li>
+                                <li><a asp-page="/Courses/">Course 5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="banner_static_menu">
+                        <a asp-page="/Courses/"><img src="~/img/bg/banner1.jpg" alt=""></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="blog.html">Universities<i class="fa fa-angle-down"></i></a>
+                <ul class="sub_menu pages">
+                    <li><a href="blog-details.html">University 1</a></li>
+                    <li><a href="blog-fullwidth.html">University 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Collages <i class="fa fa-angle-down"></i></a>
+                <ul class="sub_menu pages">
+                    <li><a href="about.html">Collage 1</a></li>
+                    <li><a href="services.html">Collage 2</a></li>
+                    <li><a href="faq.html">Collage 3</a></li>
+                    <li><a href="login.html">Collage 4</a></li>
+                </ul>
+            </li>
+            <li><a asp-page="/About">About Us</a></li>
+            <li><a asp-page="/Contact"> Contact Us</a></li>
+        </ul>
+    </nav>
+</div>

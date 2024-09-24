@@ -966,7 +966,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .header_middle {
-  background: #ffd54c;
+  background: #ffd54c !important;
   padding: 25px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
