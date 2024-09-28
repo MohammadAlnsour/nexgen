@@ -10,5 +10,6 @@ namespace nexgen.Infrastructure.Dapper
     public interface ICoursesDbService
     {
         public Task<Course> GetCourseById(int courseId);
+        public Task<List<Course>> GetAllCourses();
     }
 }

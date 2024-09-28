@@ -21,7 +21,6 @@ namespace nexgen.Web.RazorPages.Pages
             _logger = logger;
         }
         public async Task OnGetAsync(int Id)
-        
         {
             var courseNotFoundMsg = "Course not found!";
             if (Id <= 0)

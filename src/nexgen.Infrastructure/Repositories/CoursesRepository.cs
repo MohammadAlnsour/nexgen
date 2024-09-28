@@ -27,9 +27,9 @@ namespace nexgen.Infrastructure.Repositories
             return await coursesDbService.GetCourseById(id);
         }
 
-        public Task<IEnumerable<Course>> GetAll()
+        public async Task<IEnumerable<Course>> GetAll()
         {
-            throw new NotImplementedException();
+            return await coursesDbService.GetAllCourses();
         }
 
         public Task<IEnumerable<Book>> GetPaged(int pageNumber, int pageSize)

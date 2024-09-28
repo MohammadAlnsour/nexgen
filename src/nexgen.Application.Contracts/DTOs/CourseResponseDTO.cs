@@ -8,6 +8,7 @@ namespace nexgen.Application.Contracts.DTOs
 {
     public class CourseResponseDTO
     {
+        public int Id { get; set; }
         public string CourseName { get; set; }
         public string CourseImage { get; set; }
         public DateTime StartDate { get; set; }

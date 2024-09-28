@@ -71,5 +71,27 @@ namespace nexgen.Infrastructure.Dapper
                 throw;
             }
         }
+
+        public async Task<List<Course>> GetAllCourses()
+        {
+            var connectionString = _configuration.GetConnectionString("ReadConnection");
+
+            try
+            {
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    string sql = @"SELECT [Courses].*, [Instructors].InstructorName  FROM [materials].[Courses] JOIN [materials].[Instructors] ON [Courses].InstructorId = Instructors.Id";
+                    await connection.OpenAsync();
+
+                    var courses = connection.Query<Course>(sql).ToList();
+                    return courses;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }
