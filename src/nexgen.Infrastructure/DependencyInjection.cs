@@ -16,6 +16,13 @@ namespace nexgen.Infrastructure
         {
             services.AddScoped<IBookDbService, BookDbService>();
             services.AddScoped<IBookRepository, BookRepository>();
+
+            services.AddScoped<IUserDbService, UserDbService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddScoped<ICoursesDbService, CoursesDbService>();
+            services.AddScoped<ICoursesRepository, CoursesRepository>();
+
             return services;
         }
     }
