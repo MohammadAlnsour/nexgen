@@ -5288,12 +5288,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .widget_list > ul > li input:checked ~ .checkmark::before {
   display: block;
 }
-.widget_list > ul > li > a {
-  font-size: 14px;
-  display: block;
-  line-height: 27px;
-  margin-left: 30px;
-}
+    .widget_list > ul > li > a {
+        font-size: 14px;
+        display: block;
+        line-height: 27px;
+        margin-left: 0px;
+        
+    }
 .widget_list > ul > li > a:hover {
   color: #ffd54c;
 }
