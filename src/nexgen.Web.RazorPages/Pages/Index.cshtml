@@ -6,5 +6,224 @@
 
 <partial name="_topSlider"></partial>
 <partial name="_benefitsPartial"></partial>
-<partial name="_CoursesPartial"></partial>
+
+<!--product area start-->
+<section class="product_area mb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_title">
+                    <h2><span> <strong>Our</strong>Courses</span></h2>
+                    <ul class="product_tab_button nav" role="tablist" id="nav-tab">
+                        <li>
+                            <a class="active" data-toggle="tab" href="#brake" role="tab" aria-controls="brake" aria-selected="true">Pharma Courses</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#wheels" role="tab" aria-controls="wheels" aria-selected="false">Sciences Courses</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#turbo" role="tab" aria-controls="turbo" aria-selected="false">IT Courses</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#othercourses" role="tab" aria-controls="othercourses" aria-selected="false">Other Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="brake" role="tabpanel">
+                <div class="product_carousel product_column5 owl-carousel">
+                    @foreach (var course in Model.AllCourses)
+                    {
+                        <div class="single_product">
+                            <div class="product_name">
+                                <h3><a href="/course/@course.Id">@course.CourseName</a></h3>
+                                <p class="manufacture_product"><a href="/course/@course.Id">Buy the course</a></p>
+                            </div>
+                            <div class="product_thumb">
+                                <a class="primary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <a class="secondary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <div class="label_product">
+                                    <span class="label_sale"></span>
+                                </div>
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                        <li class="compare"><a href="compare.html" title="compare"><span class="lnr lnr-sync"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content">
+                                <div class="product_ratings">
+                                    <ul>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_footer d-flex align-items-center">
+                                    <div class="price_box">
+                                        <span class="regular_price">$180.00</span>
+                                    </div>
+                                    <div class="add_to_cart">
+                                        <a href="cart.html" title="add to cart"><span class="lnr lnr-cart"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="tab-pane fade" id="wheels" role="tabpanel">
+                <div class="product_carousel product_column5 owl-carousel">
+                    @foreach (var course in Model.AllCourses)
+                    {
+                        <div class="single_product">
+                            <div class="product_name">
+                                <h3><a href="/course/@course.Id">@course.CourseName</a></h3>
+                                <p class="manufacture_product"><a href="/course/@course.Id">Buy the course</a></p>
+                            </div>
+                            <div class="product_thumb">
+                                <a class="primary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <a class="secondary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <div class="label_product">
+                                    <span class="label_sale"></span>
+                                </div>
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                        <li class="compare"><a href="compare.html" title="compare"><span class="lnr lnr-sync"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content">
+                                <div class="product_ratings">
+                                    <ul>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_footer d-flex align-items-center">
+                                    <div class="price_box">
+                                        <span class="regular_price">$180.00</span>
+                                    </div>
+                                    <div class="add_to_cart">
+                                        <a href="cart.html" title="add to cart"><span class="lnr lnr-cart"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="turbo" role="tabpanel">
+                <div class="product_carousel product_column5 owl-carousel">
+                    @foreach (var course in Model.AllCourses)
+                    {
+                        <div class="single_product">
+                            <div class="product_name">
+                                <h3><a href="/course/@course.Id">@course.CourseName</a></h3>
+                                <p class="manufacture_product"><a href="/course/@course.Id">Buy the course</a></p>
+                            </div>
+                            <div class="product_thumb">
+                                <a class="primary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <a class="secondary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <div class="label_product">
+                                    <span class="label_sale"></span>
+                                </div>
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                        <li class="compare"><a href="compare.html" title="compare"><span class="lnr lnr-sync"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content">
+                                <div class="product_ratings">
+                                    <ul>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_footer d-flex align-items-center">
+                                    <div class="price_box">
+                                        <span class="regular_price">$180.00</span>
+                                    </div>
+                                    <div class="add_to_cart">
+                                        <a href="cart.html" title="add to cart"><span class="lnr lnr-cart"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="tab-pane fade" id="othercourses" role="tabpanel">
+                <div class="product_carousel product_column5 owl-carousel">
+                    @foreach (var course in Model.AllCourses)
+                    {
+                        <div class="single_product">
+                            <div class="product_name">
+                                <h3><a href="/course/@course.Id">@course.CourseName</a></h3>
+                                <p class="manufacture_product"><a href="/course/@course.Id">Buy the course</a></p>
+                            </div>
+                            <div class="product_thumb">
+                                <a class="primary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <a class="secondary_img" href="/course/@course.Id"><img src="@course.CourseImage" alt=""></a>
+                                <div class="label_product">
+                                    <span class="label_sale"></span>
+                                </div>
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                        <li class="compare"><a href="compare.html" title="compare"><span class="lnr lnr-sync"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content">
+                                <div class="product_ratings">
+                                    <ul>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                        <li><a href="#"><i class="ion-star"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_footer d-flex align-items-center">
+                                    <div class="price_box">
+                                        <span class="regular_price">$180.00</span>
+                                    </div>
+                                    <div class="add_to_cart">
+                                        <a href="cart.html" title="add to cart"><span class="lnr lnr-cart"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--product area end-->
+
 <partial name="_bannerPartial"></partial>
